@@ -34,13 +34,13 @@ export default function Layout({
       <header >
         {home ? (
           <>
-            <Image
+            {/* <Image
               priority
               src="/images/profile.jpg"
               height={144}
               width={144}
               alt={name}
-            />
+            /> */}
             <h1 >{name}</h1>
           </>
         ) : (

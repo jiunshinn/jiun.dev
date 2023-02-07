@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { GetStaticProps } from 'next'
 import Layout from 'components/layout'
 import { getSortedPostsData } from 'lib/posts'
+import Date from 'components/date'
 
 export default function Home({
   allPostsData
@@ -33,7 +34,7 @@ export default function Home({
               <Link href={`/posts/${id}`}>{title}</Link>
               <br />
               <small >
-                {/* <Date dateString={date} /> */}
+                <Date dateString={date} />
               </small>
             </li>
           ))}
