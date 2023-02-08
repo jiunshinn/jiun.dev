@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import Link from 'next/link'
 
 const name = 'Shin jiun'
@@ -7,10 +6,8 @@ export const siteTitle = 'JIUN BLOG'
 
 export default function Layout({
   children,
-  home
 }: {
   children: React.ReactNode
-  home?: boolean
 }) {
   return (
     <div >
@@ -37,11 +34,6 @@ export default function Layout({
           </>
       </header>
       <main>{children}</main>
-      {!home && (
-        <div >
-          <Link href="/">← Back to home</Link>
-        </div>
-      )}
     </div>
   )
 }

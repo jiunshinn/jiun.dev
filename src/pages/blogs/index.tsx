@@ -14,7 +14,7 @@ export default function Blog({
   }[]
 }) {
   return (
-    <Layout home>
+    <Layout>
       <section >
         <h2>Blog</h2>
         <ul>
