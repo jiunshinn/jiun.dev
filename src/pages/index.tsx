@@ -11,8 +11,9 @@ export default function Home() {
       <section>
         <p>Based in seoul</p>
       </section>
-      <section >
+      <section>
         <Link href='/blogs'>Blog</Link>
+        <Link href='/resume'>Resume</Link>
       </section>
     </Layout>
   )

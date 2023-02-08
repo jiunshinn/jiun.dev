@@ -30,35 +30,11 @@ export default function Layout({
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
       <header >
-        {home ? (
           <>
-            {/* <Image
-              priority
-              src="/images/profile.jpg"
-              height={144}
-              width={144}
-              alt={name}
-            /> */}
-            <h1 >{name}</h1>
-          </>
-        ) : (
-          <>
-            <Link href="/">
-              <Image
-                priority
-                src="/images/profile.jpg"
-                height={108}
-                width={108}
-                alt={name}
-              />
-            </Link>
-            <h2 >
-              <Link href="/" >
+            <Link href="/" >
                 {name}
-              </Link>
-            </h2>
+            </Link>
           </>
-        )}
       </header>
       <main>{children}</main>
       {!home && (
