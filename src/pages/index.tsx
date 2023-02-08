@@ -8,13 +8,11 @@ export default function Home() {
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <section>
-        <p>Based in seoul</p>
-      </section>
-      <section>
-        <Link href='/blogs'>Blog</Link>
-        <Link href='/resume'>Resume</Link>
-      </section>
+        <div className='grid place-content-center'>
+          <p className='text-blue-600'>Based in seoul</p>
+          <Link href='/blogs'>Blog</Link>
+          <Link href='/resume'>Resume</Link>
+        </div>
     </Layout>
   )
 }
