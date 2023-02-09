@@ -1,3 +1,4 @@
+//pages/sitemap.xml.js
 const EXTERNAL_DATA_URL = 'https://www.jiun.me/posts';
 
 function generateSiteMap(posts : any) {
@@ -5,10 +6,10 @@ function generateSiteMap(posts : any) {
    <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
      <!--We manually set the two URLs we know already-->
      <url>
-       <loc>https://www.jiun.me/</loc>
+       <loc>https://jsonplaceholder.typicode.com</loc>
      </url>
      <url>
-       <loc>https://www.jiun.me/about</loc>
+       <loc>https://jsonplaceholder.typicode.com/guide</loc>
      </url>
      ${posts
        .map(({ id } : any) => {
