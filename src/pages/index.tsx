@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import Layout, { siteTitle } from 'components/layout'
+import Content from 'components/content'
 
 export default function Home() {
   return (
@@ -8,11 +9,20 @@ export default function Home() {
       <Head>
         <title>{siteTitle}</title>
       </Head>
-        <div className='grid place-content-center'>
-          <p className='text-blue-600'>Based in seoul</p>
-          <Link href='/blogs'>Blog</Link>
-          <Link href='/resume'>Resume</Link>
-        </div>
+        <section className="text-gray-600 body-font">
+          <div className="container px-5 py-24 mx-auto">
+            <div className="flex flex-col text-center w-full mb-20">
+              <h2 className="sm:text-3xl text-2xl text-indigo-500 tracking-widest font-medium title-font mb-1">JIUN ARCHIVE</h2>
+              <p className="lg:w-2/3 mx-auto leading-relaxed text-base">A personal page of Shin jiun, a software developer based in seoul, Korea.</p>
+            </div>
+            <div className="flex flex-wrap">
+              <Content name='About' content='' href='/about' />
+              <Content name='Blog' content='' href='/blogs' />
+              <Content name='Portfolio' content='' href='/portfolio' />
+              <Content name='Guest' content='' href='/guest' />
+            </div>
+          </div>
+        </section>
     </Layout>
   )
 }
