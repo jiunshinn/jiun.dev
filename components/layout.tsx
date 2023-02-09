@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Link from 'next/link'
 
 const name = 'Shin jiun'
-export const siteTitle = 'JIUN BLOG'
+export const siteTitle = 'JIUN ARCHIVE'
 
 export default function Layout({
   children,
@@ -10,7 +10,7 @@ export default function Layout({
   children: React.ReactNode
 }) {
   return (
-    <div>
+    <div >
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <meta
@@ -26,10 +26,12 @@ export default function Layout({
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
-      <header className='flex justify-center'>
-          <Link href="/" >
-              {name}
-          </Link>
+      <header >
+          <>
+            <Link href="/" >
+                {name}
+            </Link>
+          </>
       </header>
       <main>{children}</main>
     </div>
