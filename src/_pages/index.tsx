@@ -18,7 +18,7 @@ export default function Home() {
               <Content name='About' content='' href='/about' />
               <Content name='Blog' content='' href='/blogs' />
               <Content name='Portfolio' content='' href='/portfolio' />
-              <Content name='Guest' content='' href='/guest' />
+              <Content name='Study' content='' href='/study' />
             </div>
           </div>
         </section>
