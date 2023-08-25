@@ -1,28 +1,28 @@
-import Link from 'next/link'
-import { GetStaticProps } from 'next'
-import Layout from 'components/layout'
-import { getSortedPostsData } from 'lib/posts'
-import Date from 'components/date'
+import Link from "next/link";
+import { GetStaticProps } from "next";
+import Layout from "@/_components/layout";
+import { getSortedPostsData } from "@/_lib/posts";
+import Date from "@/_components/date";
 
 export default function Blog({
-  allPostsData
+  allPostsData,
 }: {
   allPostsData: {
-    date: string
-    title: string
-    id: string
-  }[]
+    date: string;
+    title: string;
+    id: string;
+  }[];
 }) {
   return (
     <Layout>
-      <section >
+      <section>
         <h2>Blog</h2>
         <ul>
           {allPostsData.map(({ id, date, title }) => (
             <li key={id}>
               <Link href={`/blogs/posts/${id}`}>{title}</Link>
               <br />
-              <small >
+              <small>
                 <Date dateString={date} />
               </small>
             </li>
@@ -30,14 +30,14 @@ export default function Blog({
         </ul>
       </section>
     </Layout>
-  )
+  );
 }
 
 export const getStaticProps: GetStaticProps = async () => {
-  const allPostsData = getSortedPostsData()
+  const allPostsData = getSortedPostsData();
   return {
     props: {
-      allPostsData
-    }
-  }
-}
+      allPostsData,
+    },
+  };
+};

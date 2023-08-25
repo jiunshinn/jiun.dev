@@ -1,9 +1,5 @@
-import Layout from "components/layout";
+import Layout from "@/_components/layout";
 
 export default function Resume() {
-    return (
-        <Layout>
-            about
-        </Layout>
-      )
+  return <Layout>about</Layout>;
 }
