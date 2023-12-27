@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 import "./globals.css";
-import { Navbar } from "./components/Navbar";
+import { Navbar } from "@/app/components/Navbar";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://jiun.me"),
