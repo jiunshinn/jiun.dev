@@ -5,9 +5,7 @@ export default function Page() {
     <section>
       <h1 className="mb-8 text-2xl font-medium tracking-tighter">my work</h1>
       <hr className="my-6 border-neutral-100 dark:border-neutral-800" />
-      <h2 className="mb-1 text-xl font-medium tracking-tighter">
-        포들리 파트너스
-      </h2>
+      <h2 className="mb-1 text-xl font-medium tracking-tighter">포들러스</h2>
       <p className="text-sm text-neutral-600 dark:text-neutral-400">
         모바일 앱 개발자 (Flutter)
       </p>
