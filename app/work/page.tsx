@@ -7,7 +7,7 @@ export default function Page() {
       <hr className="my-6 border-neutral-100 dark:border-neutral-800" />
       <h2 className="mb-1 text-xl font-medium tracking-tighter">포들러스</h2>
       <p className="text-sm text-neutral-600 dark:text-neutral-400">
-        모바일 앱 개발자 (Flutter)
+        모바일 앱 개발자 (Flutter) 23.04 ~ 23.07
       </p>
       <ul>
         <br />
@@ -21,7 +21,7 @@ export default function Page() {
       <hr className="my-6 border-neutral-100 dark:border-neutral-800" />
       <h2 className="mb-1 text-xl font-medium tracking-tighter">그렉터</h2>
       <p className="text-sm text-neutral-600 dark:text-neutral-400">
-        연구원 (Nuxt.js)
+        연구원 (Nuxt.js) 22.10 ~ 23.04
       </p>
       <ul>
         <br />
@@ -43,7 +43,7 @@ export default function Page() {
         라이트하우스
       </h2>
       <p className="text-sm text-neutral-600 dark:text-neutral-400">
-        모바일 앱 개발자 (Flutter)
+        모바일 앱 개발자 (Flutter) 2021.02 ~ 2022.09
       </p>
       <ul>
         <br />
