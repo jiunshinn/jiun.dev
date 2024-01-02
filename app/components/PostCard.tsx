@@ -16,10 +16,6 @@ export default function PostCard(post: Post) {
       <time dateTime={post.date} className="block mb-2 text-xs text-gray-600">
         {format(parseISO(post.date), "LLLL d, yyyy")}
       </time>
-      {/* <div
-        className="text-sm [&>*]:mb-3 [&>*:last-child]:mb-0"
-        dangerouslySetInnerHTML={{ __html: post.body.html }}
-      /> */}
     </div>
   );
 }
