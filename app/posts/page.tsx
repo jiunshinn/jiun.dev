@@ -1,19 +1,18 @@
-import { compareDesc } from "date-fns";
+import Link from "next/link";
+import { compareDesc, format, parseISO } from "date-fns";
+import { allPosts, Post } from "contentlayer/generated";
+import PostCard from "../components/PostCard";
 
-import { allPosts } from "contentlayer/generated";
-import PostCard from "@/app/components/PostCard";
-
-export default function PostsPage() {
+export default function Page() {
   const posts = allPosts.sort((a, b) =>
     compareDesc(new Date(a.date), new Date(b.date))
   );
 
   return (
-    <section>
-      <h1 className="mb-8 text-2xl font-medium tracking-tighter">post</h1>
+    <div className="max-w-xl py-8 mx-auto">
       {posts.map((post, idx) => (
         <PostCard key={idx} {...post} />
       ))}
-    </section>
+    </div>
   );
 }

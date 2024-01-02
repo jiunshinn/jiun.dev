@@ -2,11 +2,12 @@ import { defineDocumentType, makeSource } from "contentlayer/source-files";
 
 export const Post = defineDocumentType(() => ({
   name: "Post",
-  filePathPattern: `**/*.md`,
+  filePathPattern: `**/*.mdx`,
   fields: {
     title: { type: "string", required: true },
     date: { type: "date", required: true },
     excerpt: { type: "string", required: true },
+    type: { type: "string", required: true },
   },
   computedFields: {
     url: {
@@ -16,23 +17,4 @@ export const Post = defineDocumentType(() => ({
   },
 }));
 
-export const Project = defineDocumentType(() => ({
-  name: "Project",
-  filePathPattern: `**/*.md`,
-  fields: {
-    title: { type: "string", required: true },
-    date: { type: "date", required: true },
-    excerpt: { type: "string", required: true },
-  },
-  computedFields: {
-    url: {
-      type: "string",
-      resolve: (project) => `/projects/${project._raw.flattenedPath}`,
-    },
-  },
-}));
-
-export default makeSource({
-  contentDirPath: "posts",
-  documentTypes: [Post, Project],
-});
+export default makeSource({ contentDirPath: "posts", documentTypes: [Post] });
