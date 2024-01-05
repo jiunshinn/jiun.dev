@@ -1,6 +1,6 @@
 import Link from "next/link";
-import { compareDesc, format, parseISO } from "date-fns";
-import { allPosts, Post } from "contentlayer/generated";
+import { format, parseISO } from "date-fns";
+import { Post } from "contentlayer/generated";
 
 export default function PostCard(post: Post) {
   return (
